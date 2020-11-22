@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count=0;
+    let a = 2;
+    let nguyenTo;
+    while (count < 20) {
+        nguyenTo = true;
+        for (let i = 2; i < 20; i++){
+            if ((a%i) == 0){
+                if (a == i){
+                    continue;
+                }
+                else {
+                    nguyenTo = false;
+                    break;
+                }
+            }
+        }
+        if (nguyenTo){
+            document.write(a + "<br>");
+            count++;
+        }
+        a++;
+    }
+</script>
+</body>
+</html>
